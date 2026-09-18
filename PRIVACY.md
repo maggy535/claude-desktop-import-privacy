@@ -1,24 +1,26 @@
-# Privacy Policy — Claude → Desktop import
+# Privacy Policy — Claude & ChatGPT → Desktop import
 
-Short and honest: this extension runs entirely on your computer. It reads your own Claude data and saves it to a file on your disk. It does not send your data to us or to anyone else. There are no analytics, no tracking, and no servers of ours involved.
+Short and honest: this extension runs entirely on your computer. It reads your own Claude and ChatGPT data and saves it to a file on your disk. It does not send your data to us or to anyone else. There are no analytics, no tracking, and no servers of ours involved.
 
 ## 1. What this extension does
 
-**1.1.** “Claude → Desktop import” (the “Extension”) lets you export your own projects, chats and files from claude.ai and download them as a single ZIP archive for local backup or migration to a desktop app.
+**1.1.** “Claude & ChatGPT → Desktop import” (the “Extension”) lets you export your own projects, chats and files from claude.ai and from chatgpt.com and download them as a single ZIP archive for local backup or migration to a desktop app.
 
-**1.2.** It works only within your own already logged-in session on claude.ai, using your existing access. It cannot log in for you and it asks for no credentials.
+**1.2.** It is one extension with two sources. You choose which service to export from, one at a time, and it only ever contacts the service you have selected.
+
+**1.3.** It works only within your own already logged-in session on that service, using your existing access. It cannot log in for you and it asks for no credentials.
 
 ## 2. What data the Extension accesses
 
-**2.1.** When you click “Load chat & project list” and then “Extract selected”, the Extension reads, from claude.ai, the content you asked it to export: your project names, chat titles, chat messages, project instructions and knowledge, and attached or generated files.
+**2.1.** When you click “Load chat & project list” and then “Extract selected”, the Extension reads, from the service you selected, the content you asked it to export: your project names, chat titles, chat messages, project instructions and knowledge, and attached or generated files.
 
 **2.2.** You choose exactly which projects and chats are included. Anything you do not tick is never read.
 
-**2.3.** This is your own content, accessed through your own session. The Extension does not access anything outside the host listed in section 5.
+**2.3.** This is your own content, accessed through your own session. The Extension does not access anything outside the hosts listed in section 5.
 
 ## 3. What happens to that data
 
-**3.1.** Everything stays on your device. The data the Extension reads is packaged into a single ZIP file (claude-import.zip) and saved to your browser’s Downloads folder. Nothing is uploaded anywhere.
+**3.1.** Everything stays on your device. The data the Extension reads is packaged into a single ZIP file (claude-import.zip or chatgpt-import.zip) and saved to your browser’s Downloads folder. Nothing is uploaded anywhere.
 
 **3.2.** The developer does not receive, store, see, or have any access to your exported data.
 
@@ -40,17 +42,21 @@ Short and honest: this extension runs entirely on your computer. It reads your o
 
 **5.1.** downloads — to save the exported ZIP file to your Downloads folder. That archive is the Extension’s only output.
 
-**5.2.** storage — to pass your current selection (which chats and projects to export) from the popup to the tab that performs the export, so the download is not interrupted if the popup closes. This data is kept on your own device, is never sent anywhere, and holds no content of your chats.
+**5.2.** storage — to pass your current selection (which chats and projects to export) from the popup to the tab that performs the export, so the download is not interrupted if the popup closes, and to remember which of the two services you last chose. This data is kept on your own device, is never sent anywhere, and holds no content of your chats.
 
 **5.3.** Host access to https://claude.ai/* — to read your own projects, chats and files from Claude so they can be exported.
 
-**5.4.** The Extension communicates only with the host listed above, and with no server of ours.
+**5.4.** Host access to https://chatgpt.com/* — the same, for ChatGPT.
+
+**5.5.** Host access to https://*.oaiusercontent.com/* — files you uploaded to ChatGPT, and files ChatGPT generated for you, are served from this storage host. Access to it is what allows those files to be downloaded into your archive.
+
+**5.6.** The Extension communicates only with the hosts listed above, and with no server of ours.
 
 ## 6. Limited Use
 
 **6.1.** The Extension’s use of the data it handles complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.
 
-**6.2.** Data is used only for the single purpose stated in section 1 — exporting your own Claude data, at your request, to a file on your own computer. It is not used for any secondary purpose, is not transferred to anyone, and is not used to build any profile or model.
+**6.2.** Data is used only for the single purpose stated in section 1 — exporting your own Claude or ChatGPT data, at your request, to a file on your own computer. It is not used for any secondary purpose, is not transferred to anyone, and is not used to build any profile or model.
 
 ## 7. The desktop app
 
@@ -64,7 +70,7 @@ Short and honest: this extension runs entirely on your computer. It reads your o
 
 ## 9. Your control
 
-**9.1.** You choose exactly which projects and chats to export. You can remove the Extension from Chrome at any time, and you can delete the downloaded archive whenever you wish.
+**9.1.** You choose the service, and you choose exactly which projects and chats to export. You can remove the Extension from Chrome at any time, and you can delete the downloaded archive whenever you wish.
 
 ## 10. Changes to this policy
 
